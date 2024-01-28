@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>my calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body>
+ <div class="main">
+    <img src="./cal.jpg" alt="">
+    <div id="calcBox">
+        <div class="head">
+            <img src="./Casio-Logo.png" alt="">
+        </div>
+        <table>
+            <tr>
+                <td id="displayBar" colspan="4">0</td>
+            </tr>
+            <tr>
+                <td colspan="4"><button onclick="getValue(this)" class="button" id="AC">AC</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="getValue(this)" class="button1">+</button></td>
+                <td><button onclick="getValue(this)" class="button1">-</button></td>
+                <td><button onclick="getValue(this)" class="button1">*</button></td>
+                <td><button onclick="getValue(this)" class="button1">/</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="getValue(this)" class="button">9</button></td>
+                <td><button onclick="getValue(this)" class="button">8</button></td>
+                <td><button onclick="getValue(this)" class="button">7</button></td>
+                <td><button onclick="getValue(this)" id="disabled" class="button1"><span >#</span></button></td>
+            </tr>
+            <tr>
+                <td><button onclick="getValue(this)" class="button">6</button></td>
+                <td><button onclick="getValue(this)" class="button">5</button></td>
+                <td><button onclick="getValue(this)" class="button">4</button></td>
+                <td><button onclick="getValue(this)" id="disabled" class="button1"><span >$</span></button></td>
+            </tr>
+            <tr>
+                <td><button onclick="getValue(this)" class="button">3</button></td>
+                <td><button onclick="getValue(this)" class="button">2</button></td>
+                <td><button onclick="getValue(this)" class="button">1</button></td>
+                <td><button onclick="getValue(this)" id="disabled" class="button1"><span >%</span></button></td>
+            </tr>
+            <tr>
+                <td><button onclick="getValue(this)" class="button">C</button></td>
+                <td><button onclick="getValue(this)" class="button">0</button></td>
+                <td><button onclick="getValue(this)" class="button">.</button></td>
+                <td><button onclick="getValue(this)" id="disabled" class="button1"><span>&</span></button></td>
+            </tr>
+            <tr>
+                <td colspan="4"><button onclick="getValue(this)" class="button" id="eval">=</button></td>
+            </tr>
+        </table>
+    </div>
+   
+    <script type="text/javascript" src="script.js"></script>
+</div>
+</body>
+
+</html>
